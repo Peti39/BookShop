@@ -1,24 +1,31 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+const fetchData = async () =>{
+  try{
+    const resp = await fetch("http://localhost:3000/data");
+    if(!resp.ok){throw new Error("No server :(")}
+    const data = await resp.json();
+    return data
+  }catch (error){
+    console.error("Error")
+  }
+  
+}
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+async function  onLoad() {
+  const data = await fetchData();
+  //document.getElementById("Test").innerText = JSON.stringify(data.books[0].title)
+  let table = document.createElement("table");
+  table.setAttribute("border","1")
 
-setupCounter(document.querySelector('#counter'))
+  const headerRow = table.insertRow();
+  const headers = ["title","author","price"]
+  headers.forEach(hd => {
+    const headerCell = document.createElement("th")
+    headerCell.textContent = hd
+    headerRow.appendChild(headerCell)
+  });
+
+  document.getElementById("table").appendChild(table);
+}
+
+onLoad()
+
