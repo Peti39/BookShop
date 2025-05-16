@@ -12,6 +12,10 @@ const testData = {
     price: 10
 }
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 const data = require('./src/testData.json')
 
 app.get('/data', (req, res) => {
