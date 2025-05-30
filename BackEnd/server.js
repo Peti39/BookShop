@@ -1,4 +1,4 @@
-//import data from './src/testData.json' assert { type: 'json' };
+
 
 const express = require('express');
 const app = express();
@@ -21,11 +21,7 @@ const data = require('./src/testData.json')
 app.get('/data', (req, res) => {
     res.json(data);
 });
-/*
-app.get('/data/1', (req, res) => {
-    res.json(data.books[0]);
-});
-*/
+
 app.get('/data/:id', (req, res) => {
     const id = req.params.id;
     if (!data.books[id]) {
