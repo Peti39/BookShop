@@ -3,22 +3,62 @@
       {
         "title": "To Kill a Mockingbird",
         "author": "Harper Lee",
-        "price": 10.99
+        "price": 3990,
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/1200px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg"
       },
       {
         "title": "1984",
         "author": "George Orwell",
-        "price": 8.99
+        "price": 3490,
+        "picture": "https://www.atlantiszkiado.hu/file/7e5de36e6570_198.jpg"
       },
       {
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
-        "price": 12.50
+        "price": 4290,
+        "picture": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1650033243i/41733839.jpg"
       },
       {
         "title": "Pride and Prejudice",
         "author": "Jane Austen",
-        "price": 7.25
+        "price": 2990,
+        "picture": "https://www.lab111.nl/wp-content/uploads/2025/04/Pride_And_Prejudice_Anniversary_Poster_ce303b7908.jpeg"
+      },
+      {
+        "title": "Moby Dick",
+        "author": "Herman Melville",
+        "price": 3990,
+        "picture": "https://sterling-us.imgix.net/covers/9781454959809.jpg?auto=format&h=648"
+      },
+      {
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "price": 4990,
+        "picture": "https://m.media-amazon.com/images/I/91teiIZ5vwL.jpg"
+      },
+      {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "price": 3590,
+        "picture": "https://m.media-amazon.com/images/I/8125BDk3l9L.jpg"
+      },
+      {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "price": 4590,
+        "picture": "https://m.media-amazon.com/images/I/712cDO7d73L._AC_UF1000,1000_QL80_.jpg"
+      },
+      {
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "price": 3290,
+        "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/6/62/BraveNewWorld_FirstEdition.jpg/250px-BraveNewWorld_FirstEdition.jpg"
+      },
+      {
+        "title": "Jane Eyre",
+        "author": "Charlotte Brontë",
+        "price": 3890,
+        "picture": "https://m.media-amazon.com/images/I/91zU70Aw9IS._AC_UF1000,1000_QL80_.jpg"
       }
     ]
 }
